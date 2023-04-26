@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jquinapantaExamen.Resumen">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <Label Text="Usuario:" FontSize="15" HorizontalTextAlignment="Start" Margin="10,0,0,0"/>
+                <Label x:Name="lblUsu" FontSize="15" HorizontalTextAlignment="Start" Margin="10,0,0,0"/>
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
+                <Label Text="REGISTRO DE ESTUDIANTE" HorizontalOptions="CenterAndExpand" FontSize="Title" HorizontalTextAlignment="Center" TextColor="Black" />
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Label Text="Nombre:" FontSize="24" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0" TextColor="Black"/>
+                    <Label x:Name="lblNombre" FontSize="24" Grid.Row="1" Grid.Column="1" TextColor="Blue"/>
+
+                    <Label Text="Monto Inicial:" FontSize="24" HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="0"  TextColor="Black"/>
+                    <Label x:Name="lblMontoMin" FontSize="24" Grid.Row="2" Grid.Column="1" TextColor="Blue"/>
+
+                    <Label Text="Pago Mensual:" FontSize="24" HorizontalTextAlignment="Center" Grid.Row="3" Grid.Column="0" TextColor="Black"/>
+                    <Label x:Name="lblCalculo" FontSize="24" Grid.Row="3" Grid.Column="1" TextColor="Blue"/>
+                    
+                </Grid>
+ 
+                
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

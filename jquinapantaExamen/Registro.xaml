@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jquinapantaExamen.Registro">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <Label Text="Usuario:" FontSize="15" HorizontalTextAlignment="Start" Margin="10,0,0,0"/>
+                <Label x:Name="lblUsuario" FontSize="15" HorizontalTextAlignment="Start" Margin="10,0,0,0"/>
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
+                <Label Text="REGISTRO DE ESTUDIANTE" HorizontalOptions="CenterAndExpand" FontSize="Title" HorizontalTextAlignment="Center" TextColor="Black" />
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
+
+                <!--DATOS DEL ESTUDIANTE-->
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Label Text="Nombre:" FontSize="24" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0" TextColor="Black"/>
+                    <Entry x:Name="txtNombre" Placeholder="*campo requerido" Grid.Row="1" Grid.Column="1" TextColor="Gray" Keyboard="Text"/>
+
+                    <Label Text="Monto Inicial:" FontSize="24" HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="0"  TextColor="Black"/>
+                    <Entry x:Name="txtMontoInicial" Placeholder="*campo requerido" Grid.Row="2" Grid.Column="1" MaxLength="7" TextColor="Gray" Keyboard="Numeric" TextChanged="txtMontoInicial_TextChanged"/>
+
+                    <Label Text="Pago Mensual:" FontSize="24" HorizontalTextAlignment="Center" Grid.Row="3" Grid.Column="0" TextColor="Black"/>
+                    <Label x:Name="lblResultado" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="3" Grid.Column="1" TextColor="Red"/>
+
+                    <!--Botones-->
+                    <Button x:Name="btnCalcular" Text="Calcular" Grid.Row="4" BackgroundColor="Yellow" Grid.Column="0" Clicked="btnCalcular_Clicked"/>
+                    <Button x:Name="btnLimpiar" Text="Limpiar todo" Grid.Row="4" Grid.Column="1" Clicked="btnLimpiar_Clicked"/>
+                    <Button x:Name="btnGuardar" Text="Guardar" Grid.Row="6" Clicked="btnGuardar_Clicked" />
+                </Grid>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

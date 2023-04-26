@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jquinapantaExamen.Login">
+    <ContentPage.Content>
+        <!--habilitamos movilizar la pantalla hacia abajo-->
+        <ScrollView>
+            <StackLayout>
+                <!--CABECERA DE LA PANTALLA-->
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
+                <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"/>
+                <BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" Color="#1690F4"/>
+                <Label Text="INICIO DE SESION" HorizontalOptions="CenterAndExpand" FontSize="Title" HorizontalTextAlignment="Center" TextColor="Black" />
+                <Label Text="REGISTRO DE ESTUDIANTE" HorizontalOptions="CenterAndExpand" FontSize="Title" HorizontalTextAlignment="Center" TextColor="Black" />
+
+                <!--CUERPO DE LA PANTALLA-->
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Label Text="USUARIO:" FontSize="24" HorizontalTextAlignment="Center" Grid.Row="1" TextColor="Black"/>
+
+                    <Entry x:Name="txtUsuario" Placeholder="User" Grid.Row="2" Margin="60,0,60,0" HorizontalTextAlignment="Center" TextColor="Gray"/>
+
+                    <Label Text="CONTRASEÑA:" FontSize="24" HorizontalTextAlignment="Center" Grid.Row="3" TextColor="Black"/>
+
+                    <Entry x:Name="txtContra" Placeholder="Password" Grid.Row="4" IsPassword="True" Margin="60,0,60,0" HorizontalTextAlignment="Center" TextColor="Gray"/>
+                </Grid>
+                <!--FIN DE LA PANTALLA CON UN BOTON-->
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Button x:Name="btnINGRESAR" Text="INGRESAR" Grid.Row="1" Margin="60,0,60,0" Clicked="btnINGRESAR_Clicked"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
