@@ -19,8 +19,8 @@ namespace jquinapantaExamen
 
         private void btnINGRESAR_Clicked(object sender, EventArgs e)
         {
-            const String usuario1 = "2023";
-            const String pass1 = "2023";
+            const String usuario1 = "estudiante2023";
+            const String pass1 = "uisrael2023";
             if ((txtUsuario.Text == usuario1) && (txtContra.Text == pass1))
             {
                 DisplayAlert("UISRAEL", "BIENVENIDO " + usuario1, "Cerrar");

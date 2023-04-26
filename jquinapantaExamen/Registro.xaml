@@ -29,7 +29,7 @@
                     <Entry x:Name="txtMontoInicial" Placeholder="*campo requerido" Grid.Row="2" Grid.Column="1" MaxLength="7" TextColor="Gray" Keyboard="Numeric" TextChanged="txtMontoInicial_TextChanged"/>
 
                     <Label Text="Pago Mensual:" FontSize="24" HorizontalTextAlignment="Center" Grid.Row="3" Grid.Column="0" TextColor="Black"/>
-                    <Label x:Name="lblResultado" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="3" Grid.Column="1" TextColor="Red"/>
+                    <Label x:Name="lblResultado" FontSize="20"  Grid.Row="3" Grid.Column="1" TextColor="Red"/>
 
                     <!--Botones-->
                     <Button x:Name="btnCalcular" Text="Calcular" Grid.Row="4" BackgroundColor="Yellow" Grid.Column="0" Clicked="btnCalcular_Clicked"/>

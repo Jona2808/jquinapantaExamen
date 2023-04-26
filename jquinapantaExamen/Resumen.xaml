@@ -31,8 +31,6 @@
                     <Label x:Name="lblCalculo" FontSize="24" Grid.Row="3" Grid.Column="1" TextColor="Blue"/>
                     
                 </Grid>
- 
-                
 
             </StackLayout>
         </ScrollView>

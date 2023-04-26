@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -50,7 +50,7 @@ namespace jquinapantaExamen
                 double interes = costo * 0.05;
                 double total = (((costo-montoI) + interes) /3);
                 
-                lblResultado.Text = total.ToString();
+                lblResultado.Text = total.ToString("N2");
             }
 
         }
@@ -73,6 +73,8 @@ namespace jquinapantaExamen
             string res = Convert.ToString(total);
 
             Navigation.PushAsync(new Resumen(usua, nom, mini, res));
+
+            DisplayAlert("Informacion", "Usuario guardado con exito", "Continuar");
         }
     }
 }
